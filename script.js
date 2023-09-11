@@ -16,7 +16,11 @@ function cekPenerimaan() {
         "mohammad ikhsan ramadhan"
     ];
 
-    if (namaDiterima.includes(namaInput)) {
+    // Memisahkan input nama menjadi dua kata pertama
+    const inputKata = namaInput.split(' ').slice(0, 2).join(' ');
+
+    // Memeriksa apakah dua kata pertama dalam input ada dalam daftar nama yang diterima
+    if (namaDiterima.includes(inputKata)) {
         window.location.href = "halaman-diterima.html"; // Arahkan ke laman kedua
     } else {
         window.location.href = "halaman-tidak-diterima.html"; // Arahkan ke laman "Tidak Diterima"
