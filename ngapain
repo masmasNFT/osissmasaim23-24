@@ -1,0 +1,21 @@
+/* style-diterima.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0077b6; /* Warna latar belakang biru */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; /* Warna teks putih */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang semi-transparan untuk kontainer */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
