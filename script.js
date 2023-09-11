@@ -1,5 +1,7 @@
 function cekPenerimaan() {
     const namaInput = document.getElementById("nama").value.toLowerCase(); // Mengubah input nama menjadi huruf kecil
+    const kataInput = namaInput.split(' ').slice(0, 2).join(' '); // Mengambil 2 kata pertama dari input
+
     const namaDiterima = [
         "nafis anggen bhaskara",
         "novandra adzra ghassani",
@@ -16,11 +18,9 @@ function cekPenerimaan() {
         "mohammad ikhsan ramadhan"
     ];
 
-    // Memisahkan input nama menjadi dua kata pertama
-    const inputKata = namaInput.split(' ').slice(0, 2).join(' ');
+    const namaDiterima2Kata = namaDiterima.map(nama => nama.split(' ').slice(0, 2).join(' '));
 
-    // Memeriksa apakah dua kata pertama dalam input ada dalam daftar nama yang diterima
-    if (namaDiterima.includes(inputKata)) {
+    if (namaDiterima2Kata.includes(kataInput)) {
         window.location.href = "halaman-diterima.html"; // Arahkan ke laman kedua
     } else {
         window.location.href = "halaman-tidak-diterima.html"; // Arahkan ke laman "Tidak Diterima"
