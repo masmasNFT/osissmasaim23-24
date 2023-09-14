@@ -30,12 +30,13 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 80%; /* Adjust the input width as needed */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 10px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 button {
@@ -47,6 +48,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Rest of your CSS code remains the same */
+
 
 }
 
