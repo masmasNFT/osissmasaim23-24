@@ -21,6 +21,7 @@ body {
 
 h1 {
   color: #333;
+  margin-bottom: 20px; /* Add some space below the heading */
 }
 
 label {
@@ -38,12 +39,15 @@ input {
 }
 
 button {
+  width: 100%; /* Make the button take up the full container width */
   background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
 }
 
 button:hover {
